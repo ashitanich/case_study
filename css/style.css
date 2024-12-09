@@ -39,23 +39,24 @@ nav {
   align-items: center;
   justify-content: space-between;
   background-color: #fff;
+  padding: 20px;
   z-index: 1000;
   box-shadow: 0 1px 5px rgb(146 161 176 / 15%);
 }
 
 nav img {
-  max-width: 30%;
+  max-width: 25%;
   height: auto;
 }
 
 nav ul {
+  margin: 0;
+  padding: 0;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
   gap: 15px;
-  margin: 0;
-  padding: 0;
   list-style: none;
   width: 100px;
 }
@@ -73,6 +74,40 @@ nav a {
   display: flex;
   align-items: center;
   transition: all 0.3s ease;
+}
+
+.nav-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  width: 120px;
+  height: auto;
+  margin-top: 20px;
+}
+
+.nav-toggle img {
+  width: 100%;
+  height: auto;
+}
+
+.nav-menu {
+  margin: 0;
+  padding: 0;
+  display: none; 
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 15px;
+  list-style: none;
+}
+
+.nav-menu.open {
+  display: flex;
+  margin-left: -30px; 
 }
 
 nav a:hover,
@@ -228,6 +263,15 @@ footer {
     padding: 10px 20px;
     width: 100%;
   }
+  .nav-menu {
+    display: flex !important; /* Always visible on larger screens */
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  .nav-toggle {
+    display: none; /* Hide the toggle button on larger screens */
+  }
 
   nav img {
     display: flex;
@@ -284,5 +328,22 @@ footer {
     margin-top: 0;
   }
 
-  
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .parallax {
+    background-attachment: scroll;
+  }
+
+  * {
+    transition: none;
+  }
+
+  nav ul {
+    display: block;
+  }
+
+  .scroll-effect {
+    transform: none;
+  }
 }
