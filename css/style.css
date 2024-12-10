@@ -154,7 +154,7 @@ nav a:focus {
 
 /* Specific Hero Background */
 .hero {
-  background-image: url("/final_project/img/hero_bg.jpg");
+  background-image: url("/img/hero_bg.jpg");
 }
 
 .hero-content {
@@ -165,19 +165,19 @@ nav a:focus {
 
 /* All parrallax images */
 .parallax-2 {
-  background-image: url("/final_project/img/planning.jpg");
+  background-image: url("/img/planning.jpg");
 }
 
 .parallax-3 {
-  background-image: url("/final_project/img/research.jpg");
+  background-image: url("/img/research.jpg");
 }
 
 .parallax-4 {
-  background-image: url("/final_project/img/design.jpg");
+  background-image: url("/img/design.jpg");
 }
 
 .parallax-5 {
-  background-image: url("/final_project/img/develop.jpg");
+  background-image: url("/img/develop.jpg");
 }
 
 /* Content sections */
