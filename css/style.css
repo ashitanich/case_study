@@ -19,7 +19,6 @@ html {
   background: white;
   left: 0;
   padding: 6px;
-  -webkit-transition: top 1s ease-out;
   transition: top 1s ease-out;
   z-index: 1;
 }
@@ -295,7 +294,6 @@ footer {
     height: 7px;
     background: #ccc;
     position: fixed;
-    top: 84px;
     z-index: 1000;
   }
 
@@ -304,7 +302,7 @@ footer {
     height: 7px;
     background: linear-gradient(90deg, #b0a3c2, #d99691, #f9cbbd);
     width: 0%;
-    transition: width 0.2s ease-in-out; 
+    transition: width 0.2s ease-in-out;
   }
 
   h1{
