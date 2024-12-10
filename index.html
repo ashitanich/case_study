@@ -33,8 +33,11 @@
                 <li><a href="https://www.ashitanichanametla.com/contact">Contact</a></li>
             </ul>
         </nav>
-
+        <div class="progress-container">
+            <div class="progress-bar" id="myBar"></div>
+        </div>
     </header>
+
     <main id="main-content">
         <!-- Parallax Hero Section -->
         <section class="parallax hero">
@@ -265,18 +268,7 @@
     <footer>
         <p>© Ashita Nichanametla <span id="year"></span></p>
     </footer>
-    <script>
-        document.getElementById("year").innerHTML = new Date().getFullYear();
-        document.addEventListener("DOMContentLoaded", () => {
-            const navToggle = document.querySelector(".nav-toggle");
-            const navMenu = document.querySelector(".nav-menu");
-
-            navToggle.addEventListener("click", () => {
-                navMenu.classList.toggle("open"); // Toggle the visibility
-            });
-        });
-    </script>
-
+    <script src="js/script.js"></script>
 </body>
 
 </html>
